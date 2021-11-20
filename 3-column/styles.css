@@ -1,0 +1,142 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --Big-Shoulders:'Big Shoulders Display', cursive;
+    --Lexend-Deca: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 30px 0px;
+}
+
+.card-component {
+    color: var(--Very-light-gray);
+    margin: 0px 16px;
+    max-width: 375px;
+}
+
+@media screen and (min-width: 1440px) {
+    .card-component{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 1100px;
+    }
+}
+
+.card-1 {
+    width: 100%;
+    min-height: 240px;
+    padding-left: 50px;
+    padding-top: 40px;
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .card-1 {
+        border-radius: 10px 0 0 10px;
+        min-height: 550px;
+    }
+}
+
+.card-2 {
+    width: 100%;
+    min-height: 240px;
+    padding-left: 50px;
+    padding-top: 40px;
+    background-color: var(--Dark-cyan);
+}
+
+@media screen and (min-width: 1440px) {
+    .card-2 {
+        min-height: 550px;
+    }
+}
+
+.card-3 {
+    width: 100%;
+    min-height: 240px;
+    padding-left: 50px;
+    padding-top: 40px;
+    background-color: var(--Bright-orange);
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 1440px) {
+    .card-3 {
+        border-radius: 0 10px 10px 0;
+        min-height: 550px;
+    }
+}
+
+.title-component {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+    .title-component {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+}
+
+.text-component {
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    padding-right: 65px;
+    font-size: 15px;
+    color: var(--Transparent-white);
+    line-height: 25px;
+}
+
+@media screen and (min-width: 1440px) {
+    .text-component {
+        font-size: 16px;
+        height: 270px;
+    }
+}
+
+.boton {
+    border: none;
+    width: 140px;
+    height: 48px;
+    border-radius: 160px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1440px) {
+    .boton {
+        margin-bottom: 40px;
+        width: 150px;
+    }
+}
+
+.btn-1 {
+    color: var(--Bright-orange);
+}
+
+.btn-2 {
+    color: var(--Dark-cyan);
+}
+
+.btn-3 {
+    color: var(--Dark-cyan);
+}
