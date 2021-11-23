@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-all {
+  width: 1600px;
+  height: 1200px;
+  position: absolute;
+  background: #e5e5e5;
+}
+
+.container {
+  position: absolute;
+  width: 859px;
+  height: 928px;
+  top: 76px;
+  left: 370px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.header {
+  width: 859px;
+  height: 125px;
+  background-color: #203774;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.header h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 45px;
+  margin-left: 41px;
+}
+
+.header img {
+  width: 19.5px;
+  height: 19.5px;
+  margin-right: 41px;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.date-day {
+  text-align: center;
+}
+
+.date-day .number {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 45px;
+  color: #0f131c;
+}
+
+.date-day .day {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.menor {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  margin-right: 66.5px;
+}
+
+.mayor {
+  margin-left: 66.5px;
+}
+
+.card-1 {
+  display: grid; /*armo una grilla usando grid para la info dentro del contenedor*/
+  grid-template-columns: auto auto; /*le "digo" qu tenga 2 columnas iguales*/
+  width: 524px;
+  height: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  background-color: #203774;
+  border-radius: 20px;
+}
+
+.especialidad-1 .odont-1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-top: 33px;
+  margin-left: 45px;
+}
+
+.especialidad-1 .odont-time {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.turno a {
+  position: absolute;
+  width: 153px;
+  height: 53px;
+  margin-top: 30px;
+  margin-left: -50px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.professional {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  margin-bottom: 34px;
+}
+
+.professional .img-prof {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: 3px solid #4868BD;
+}
+
+.name-prof {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.card-2 {
+  display: grid; /*armo una grilla usando grid para la info dentro del contenedor*/
+  grid-template-columns: auto auto; /*le "digo" qu tenga 2 columnas iguales*/
+  width: 524px;
+  height: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #203774;
+  border-radius: 20px;
+}
+
+.especialidad-2 .odont-2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-top: 33px;
+  margin-left: 45px;
+}
+
+.especialidad-2 .odont-time2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.turno-2 a {
+  position: absolute;
+  width: 153px;
+  height: 53px;
+  margin-top: 30px;
+  margin-left: -50px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.professional-2 {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  margin-bottom: 34px;
+}
+
+.professional-2 .img-prof2 {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: 3px solid #4868BD;
+}
+
+.name-prof-2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+
