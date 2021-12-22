@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", Helvetica, sans-serif;
+  background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 12px;
+}
+
+/* card*/
+
+.card {
+  background-color: #eee;
+  min-height: 507px;
+  width: 920px;
+  max-width: 100%;
+  border-radius: 16px;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  /* box-shadow: 0 20px 40px var(--box-shadow); */
+}
+
+/* card left*/
+
+.card-images {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg1 {
+  position: absolute;
+  background: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 1014px;
+  width: 80%;
+  margin-right: 10%;
+  margin-top: -70%;
+}
+
+.bg2 {
+  position: absolute;
+  background: url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  height: 100%;
+  width: 95%;
+  margin-top: 25px;
+  margin-left: -15%;
+}
+
+.box-wrapper {
+  position: absolute;
+  width: 10%;
+  min-width: 90px;
+  height: auto;
+  top: 45%;
+  left: -10%;
+  z-index: 1;
+}
+
+.box-wrapper img {
+  max-width: 18vw;
+}
+
+/* card right*/
+
+.card-accordion {
+  flex: 1;
+}
+
+h1 {
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.accordion-question {
+  margin-right: 5vw;
+  font-weight: 400;
+  overflow: auto;
+  height: 507px;
+}
+
+.card-accordion h1 {
+  font-size: 2rem;
+  padding-top: 5.5rem;
+  padding-bottom: 1rem;
+}
+
+.question {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 1.25rem 1.25rem 1.25rem 0;
+  border-bottom: 1px solid var(--Light-grayish-blue);
+  color: var(--Very-dark-grayish-blue);
+}
+
+.icon-wrapper {
+  margin: auto 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.question img {
+  width: 10px;
+  height: auto;
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+}
+
+.question:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.answer {
+  font-size: 0.7rem;
+  padding: 0.5rem 2rem 0.2rem 0;
+  line-height: 1.25rem;
+  color: var(--Dark-grayish-blue);
+}
+
+/*Media querys*/
+
+@media screen and (max-width: 768px) {
+  .bg1 {
+    height: 875px;
+  }
+
+  .box-wrapper {
+    top: 36vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 24px 0 24px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card-images {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg1 {
+    background: url(./images/bg-pattern-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 230px;
+    max-height: 200px;
+    margin: 0;
+    top: 0;
+  }
+
+  .bg2 {
+    z-index: 10;
+    background: url(./images/illustration-woman-online-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    max-width: 250px;
+    height: 250px;
+    top: -85px;
+    margin: -5% 7% 0 0;
+  }
+
+  .box-wrapper img {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .accordion-question {
+    padding-top: 50px;
+  }
+
+  .ques-ans {
+    margin-left: 2rem;
+  }
+
+  .question p {
+    margin-right: 10px;
+  }
+
+  .attribution {
+    position: relative;
+    margin-top: 20px;
+  }
+}
